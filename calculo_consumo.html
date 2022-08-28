@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculo consumo</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h3>¿Alcohol o gasolina?</h3>
+
+	<script>
+	function saltarlinea () {
+		document.write("<br><br><br>");
+	}
+
+	function imprimir(frase) {
+		document.write(frase)
+	}
+
+	var tanque=40;
+	var kilometros=480;
+
+	imprimir("Este es un programa que calcula el consumo de alcohol y gasolina");
+
+	saltarlinea();
+
+	document.write("El consumo de gasolina por kilometro recorrido es: " + kilometros/tanque);
+
+	saltarlinea();
+
+	kilometros=300
+	document.write("El consumo de alcohol por kilometro recorrido es: " + kilometros/tanque);
+	saltarlinea();
+
+
+
+	</script>
+
+
+</body>
+</html>

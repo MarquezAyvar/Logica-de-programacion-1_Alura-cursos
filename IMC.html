@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cálculo del IMC</title>
+</head>
+<body>
+	<script>
+	function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function calcularimc(peso,altura){
+
+    	imc= peso/(altura*altura);
+    	return imc;
+    }
+
+    	nombre=prompt("Coloca tu nombre")
+    	pesoinformado=prompt( nombre+ " coloca tu peso")
+    	alturainformada=prompt( nombre+ " coloca tu altura")
+
+    	imccalculado=calcularimc(pesoinformado,alturainformada)
+    	imprimir( nombre + " el imc calculado es: "+ imccalculado)
+
+        if (imccalculado<18.5){
+
+            imprimir("abajo de lo recomendado");
+        }
+
+       if (imccalculado>=18.5){
+            if (imccalculado<25) {
+
+                imprimir("IMC está dentro de lo normal");
+
+            }
+            
+        }
+        if (imccalculado>=25){
+
+            if(imccalculado<30){
+
+                imprimir("IMC considerado como sobrepeso");
+            }
+
+            imprimir("abajo de lo recomendado");
+        }
+        if (imccalculado>=30){
+
+            imprimir("imc considerado como obesidad");
+        }
+
+
+
+
+    	//var imcMelissa = calcularimc(50,1.56);
+    	//var imcFelipe = calcularimc(75,1.73);
+
+    	//imprimir("El promedio del IMC calculado de Melissa y Felipe es: " + (imcMelissa+imcFelipe)/2);
+
+
+
+
+
+	</script>
+
+</body>
+</html>
